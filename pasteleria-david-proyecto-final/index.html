@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASTELERIA-DAVID.COM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>PASTELERIA DAVID.COM</h1>
+            <nav>
+                <ul>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#recetas">Recetas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#acerca">Sobre mí</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de productos -->
+    <section id="productos">
+        <h1>PRODUCTOS</h1>
+        <div id="lista-productos"></div>
+        <button id="ver-carrito">Ver Carrito</button>
+    </section>
+
+    <!-- Sección de recetas -->
+    <section id="recetas">
+        <h1>RECETAS</h1>
+        <button id="cargarRecetasBtn">Cargar Recetas</button>
+        <div id="lista-recetas"></div>
+    </section>
+
+    <!-- Modal del carrito -->
+    <div id="carrito-modal" class="modal">
+        <button id="cerrar-modal" class="cerrar-modal">&times;</button>
+        <h2>Tu Carrito</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total-compra">0</span></p>
+        <p>Fecha de Compra: <span id="fecha-compra"></span></p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <button id="confirmar-compra">Confirmar Compra</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>PASTELERIA DAVID.COM 2024 - HECHO CON AMOR!! Y DULZURA!! PARA BELU!! </p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
